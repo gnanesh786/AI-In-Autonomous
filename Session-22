@@ -1,0 +1,14 @@
+#AMAZON (Kinematics)  
+left  = 3
+right = 3
+
+# Compute angular velocity (difference of wheels)
+omega = right - left
+
+# If wheels are equal, the robot moves in a straight line
+if omega == 0:
+    motion_type = "Straight Motion"
+else:
+    motion_type = "Turning"
+
+print(motion_type)
