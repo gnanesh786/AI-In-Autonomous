@@ -1,0 +1,11 @@
+#  NVIDIA (IMU Correction)
+
+# Measured (drifted) orientation and estimated drift
+measured_orientation_deg =  heading_with_drift = 45.0   # example
+drift_deg                = 1.8                          # given
+
+# Corrected (stabilized) orientation
+corrected_orientation_deg = measured_orientation_deg - drift_deg
+
+print(f"Drift = {drift_deg}° -> Output: Orientation Stabilized")
+print(f"Corrected heading = {corrected_orientation_deg:.2f}°")
