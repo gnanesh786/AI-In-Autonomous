@@ -1,0 +1,18 @@
+# NVIDIA (RRT)  Goal radius threshold (in meters)
+import math
+goal_radius = 0.4
+
+# Simulated sampled node and goal positions (2D xy)
+sampled_node = (1.2, 0.8)        # some new node from the tree
+goal        = (1.5, 1.0)         # fixed goal position
+
+# Compute Euclidean distance from sampled node to goal
+dx = sampled_node[0] - goal[0]
+dy = sampled_node[1] - goal[1]
+dist = math.sqrt(dx*dx + dy*dy)
+
+# Check if within goal radius → successful connection
+if dist <= goal_radius:
+    print("Goal Connected")
+else:
+    print("Goal Not Connected")
