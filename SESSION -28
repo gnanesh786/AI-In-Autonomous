@@ -1,0 +1,8 @@
+#  TESLA (Obstacle Avoidance)
+obstacle_distance = 0.25   # meters
+safe_threshold    = 0.3     # example threshold; 0.25 is below this
+
+if obstacle_distance <= safe_threshold:
+    print("Output: Turn Right")
+else:
+    print("Output: Continue Straight")
