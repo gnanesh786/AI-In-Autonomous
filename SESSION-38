@@ -1,0 +1,11 @@
+#  WALMART (Logistics)
+
+time_taken      = 95      # seconds
+max_allowed_time = 120    # example permissible window upper bound
+
+if time_taken <= max_allowed_time:
+    status = "Package Delivered"
+else:
+    status = "Delivery Failed (Timeout)"
+
+print(f"Time = {time_taken} s -> Output: {status}")
