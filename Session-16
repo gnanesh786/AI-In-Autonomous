@@ -1,0 +1,11 @@
+# AMAZON (Path Planning) Path costs
+cost_A = 6
+cost_B = 4
+
+# Greedy rule: pick the path with minimum cost
+if cost_A < cost_B:
+    selected = "Path A"
+else:
+    selected = "Path B"
+
+print(f"Selected: {selected}")
