@@ -1,0 +1,12 @@
+# NVIDIA (Line Detection)
+
+offset_px = 25  # +25 px → line appears to the left, robot drifted right
+
+if offset_px > 0:
+    command = "Turn Left"
+elif offset_px < 0:
+    command = "Turn Right"
+else:
+    command = "Go Straight"
+
+print(f"Offset = {offset_px} px -> Output: {command}")
