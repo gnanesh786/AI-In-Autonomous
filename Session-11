@@ -1,0 +1,12 @@
+#  AMAZON (Object Area) General Objective
+
+# Bounding box dimensions (in pixels)
+width = 60
+height = 30
+
+# Calculate area
+area = width * height
+
+# Display result
+print("Amazon - Bounding Box Area Calculation")
+print("Area =", area, "px²")
