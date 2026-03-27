@@ -1,0 +1,8 @@
+# MICROSOFT (Feedback Control) Setpoint and actual value
+setpoint = 10
+actual   =  7
+
+# Compute feedback error
+error = setpoint - actual
+
+print(f"Error = {error}")
