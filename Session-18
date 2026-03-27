@@ -1,0 +1,11 @@
+# IBM (Rule Agent) Sensor observations
+obstacle_detected = True
+speed             = 1.5   # any value > 0
+
+# Rule: if obstacle AND speed > 0 → stop
+if obstacle_detected and speed > 0:
+    action = "Stop"
+else:
+    action = "Continue"
+
+print(action)
