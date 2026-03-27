@@ -1,0 +1,9 @@
+# Motor control: compute required speed from distance and time
+distance = 20.0   # m
+time     = 8.0    # s
+
+# Speed = Distance / Time
+speed = distance / time
+
+print("Input:  Distance =", distance, "m, Time =", time, "s")
+print("Output: Motor Speed =", speed, "m/s")   # 2.5 m/s
