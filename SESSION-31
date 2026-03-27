@@ -1,0 +1,12 @@
+#  NVIDIA (System Integration)
+
+# Flags from individual subsystems (assume each one set these)
+perception_ok = True    # e.g., sensors + localization running
+planning_ok   = True    # e.g., global + local planner succeeded
+control_ok    = True    # e.g., controller executed commands without fault
+
+if perception_ok and planning_ok and control_ok:
+    print("Output: Autonomous Execution Successful")
+else:
+    print("Output: Autonomous Execution Failed")
+    
