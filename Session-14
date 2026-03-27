@@ -1,0 +1,9 @@
+# NVIDIA (Visual SLAM) 
+prev_pose = (2, 3)
+motion     = (0.4, 0.6)
+
+# Update: new_pose = prev_pose + motion
+new_pose = (prev_pose[0] + motion[0],
+            prev_pose[1] + motion[1])
+
+print(f"New Pose = ({new_pose[0]}, {new_pose[1]})")
