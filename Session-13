@@ -1,0 +1,8 @@
+# APPLE (Sensor Fusion) 
+imu = 32
+vision = 28
+
+# Simple mean fusion
+fused = (imu + vision) / 2
+
+print(f"Fused Angle = {fused:.0f}°")
