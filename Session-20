@@ -1,0 +1,10 @@
+#TESLA (Navigation) 
+import math
+distance_to_goal = 0.15
+threshold        = 0.2   # chosen threshold larger than 0.15
+
+# Check if within goal radius
+if distance_to_goal < threshold:
+    print("Goal Reached")
+else:
+    print("Goal Not Reached")
