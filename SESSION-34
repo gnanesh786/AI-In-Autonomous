@@ -1,0 +1,10 @@
+#  GOOGLE (Teleoperation)
+
+key = "A"  # captured from keyboard
+
+if key.upper() == "A":
+    command = "Left Turn"
+else:
+    command = "No Turn"
+
+print(f"Key: {key} -> Output: {command}")
