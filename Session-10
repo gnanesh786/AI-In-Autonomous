@@ -1,0 +1,12 @@
+#TESLA (Edge Detection) General Objective
+import math
+
+# Input gradients
+Gx = 5   # horizontal gradient
+Gy = 12  # vertical gradient
+
+# Compute edge strength (gradient magnitude)
+edge_strength = math.sqrt(Gx**2 + Gy**2)
+
+print("Input:  Gx =", Gx, ", Gy =", Gy)
+print("Output: Edge Strength =", edge_strength)   # 13.0
