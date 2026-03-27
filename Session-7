@@ -1,0 +1,20 @@
+# JP MORGAN (Optimization)
+import sympy as sp
+
+# Define symbol and energy function
+x = sp.symbols('x')
+E = x**2 - 6*x + 10
+
+# Compute derivative
+dE_dx = sp.diff(E, x)
+
+# Solve for minimum (set derivative = 0)
+x_min = sp.solve(dE_dx, x)[0]
+
+# Compute minimum energy value
+E_min = E.subs(x, x_min)
+
+print("Energy function: E(x) =", E)
+print("Derivative: dE/dx =", dE_dx)
+print("Minimum at x =", x_min)
+print("Minimum energy E(", x_min, ") =", E_min)
