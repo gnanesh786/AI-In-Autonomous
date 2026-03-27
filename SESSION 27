@@ -1,0 +1,11 @@
+# AMAZON (Go-To-Goal)
+import math
+
+start = (0, 0)
+goal  = (6, 8)
+
+dx = goal[0] - start[0]
+dy = goal[1] - start[1]
+distance = math.sqrt(dx*dx + dy*dy)
+
+print(f"Output: Distance = {distance:.0f} m")
