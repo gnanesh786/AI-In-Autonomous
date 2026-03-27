@@ -1,0 +1,12 @@
+# GOOGLE – ROS2 Communication
+
+# Step 1: Publish Twist command
+publish_twist = True
+
+# Step 2: Robot subscribes and executes
+if publish_twist:
+    print("Output: Robot Moves")
+
+# Step 3: Industry reference
+print("Industry: Google Robotics")
+     
