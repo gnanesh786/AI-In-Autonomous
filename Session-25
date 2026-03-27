@@ -1,0 +1,8 @@
+# GOOGLE (Potential Fields) 
+attractive = 12
+repulsive  =  5
+
+# Net navigational force in potential field
+net_force = attractive - repulsive
+
+print(f"Force = {net_force}")
