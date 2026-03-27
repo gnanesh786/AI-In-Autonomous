@@ -1,0 +1,11 @@
+# APPLE (Localization)
+
+pose_error       = 0.08   # meters, |estimated - ground truth|
+accuracy_threshold = 0.10  # example requirement: ≤ 10 cm
+
+if pose_error <= accuracy_threshold:
+    result = "Accurate Localization"
+else:
+    result = "Localization Inaccurate"
+
+print(f"Pose Error = {pose_error} m -> Output: {result}")
