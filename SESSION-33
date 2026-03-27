@@ -1,0 +1,19 @@
+import random
+import math
+
+#  AMAZON (Wander Bot)
+
+# Current heading in degrees (e.g., facing 0° = +x direction)
+heading_deg = 0.0
+
+# Random angle selection (for the lab, fix it to 90°)
+# In a true wander, you might use: random_angle = random.choice([-90, 0, 90])
+random_angle = 90.0
+
+# Update heading
+new_heading_deg = (heading_deg + random_angle) % 360.0
+
+print(f"Old heading: {heading_deg:.0f}°")
+print(f"Random angle: {random_angle:.0f}°")
+print(f"New heading: {new_heading_deg:.0f}°")
+print("Output: Direction Updated")
