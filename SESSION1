@@ -1,0 +1,12 @@
+# Robot type classifier (ground vs aerial) based on motion parameters
+speed = 6.0      # m/s
+altitude = 15.0  # m
+\
+# Rule‑based classification
+if altitude > 0:
+    robot_type = "Aerial Autonomous Robot"
+else:
+    robot_type = "Ground Autonomous Robot"
+
+print("Input:  Speed =", speed, "m/s, Altitude =", altitude, "m")
+print("Output:", robot_type)
