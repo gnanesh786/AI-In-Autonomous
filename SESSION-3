@@ -1,0 +1,16 @@
+required_range = 80.0  # m
+
+# Approximate max useful ranges (typical automotive sensors)
+camera_max = 60.0    # m
+radar_max  = 150.0   # m (but low resolution)
+lidar_max  = 120.0   # m (high resolution)
+
+if required_range <= camera_max:
+    selected_sensor = "Camera"
+elif required_range <= radar_max:
+    selected_sensor = "Radar"
+else:
+    selected_sensor = "LiDAR"
+
+print("Required Range:", required_range, "m")
+print("Selected Sensor:", selected_sensor)  # Output: LiDAR Selected
