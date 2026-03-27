@@ -1,0 +1,14 @@
+(NVIDIA‑style vision pipeline)
+python
+# Color-to-grayscale conversion using luminance formula
+R, G, B = 120, 150, 200
+
+# Standard luminance weights (approximates 0.299, 0.587, 0.114 in practice)
+w_r = 0.3
+w_g = 0.59
+w_b = 0.11
+
+gray = w_r * R + w_g * G + w_b * B
+
+print("Input:  RGB =", (R, G, B))
+print("Output: Gray =", round(gray), "px")   # typically 147
