@@ -1,0 +1,8 @@
+# GOOGLE (Belief Update) 
+prior      = 0.7
+likelihood = 0.6
+
+# Basic Bayesian product rule (ignoring normalization for this lecture)
+updated_belief = prior * likelihood
+
+print(f"Updated Belief = {updated_belief:.2f}")
