@@ -1,0 +1,11 @@
+# SAUDI ARAMCO (Hybrid Energy)
+
+battery_level     = 18    # in percent
+critical_threshold = 20   # example critical threshold (%)
+
+if battery_level < critical_threshold:
+    mode = "Charging Mode"
+else:
+    mode = "Operational Mode"
+
+print(f"Output: {mode}")
