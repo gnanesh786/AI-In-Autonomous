@@ -1,0 +1,13 @@
+# GOOGLE (Wall Following)
+
+desired_distance = 0.5   # m
+actual_distance  = 0.2   # m
+
+error = desired_distance - actual_distance  # > 0 → too close
+
+if actual_distance < desired_distance:
+    command = "Move Away from Wall"
+else:
+    command = "Move Towards Wall or Keep"
+
+print(f"Output: {command}")
