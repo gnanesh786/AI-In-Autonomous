@@ -1,0 +1,9 @@
+# META-Camera projection: u = f * X / Z
+f = 600   # focal length in pixels
+X = 3.0   # horizontal world coordinate (e.g., in meters)
+Z = 6.0   # depth (distance along optical axis)
+
+u = f * X / Z
+
+print("Input:  f =", f, "px, X =", X, ", Z =", Z)
+print("Output: u =", u, "px")   # 300 px
