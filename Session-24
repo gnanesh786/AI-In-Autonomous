@@ -1,0 +1,18 @@
+# NVIDIA (C-Space) Robot radius and obstacle radius (or distance margin)
+robot_radius = 0.6
+
+# Example: obstacle boundary points in 1D (could be distance to wall)
+obstacle_center = 5.0
+original_margin = 1.0
+
+# Inflate obstacle in C-space by robot radius
+inflated_obstacle = obstacle_center + robot_radius
+inflated_margin  = original_margin - robot_radius
+
+# If inflated margin is still positive, the robot can safely pass
+if inflated_margin > 0:
+    cspace_status = "Collision-Free"
+else:
+    cspace_status = "Collision Looming"
+
+print(cspace_status)
