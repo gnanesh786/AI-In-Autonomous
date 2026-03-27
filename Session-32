@@ -1,0 +1,7 @@
+# MICROSOFT – ROS2 Python
+
+real_time = True
+
+if real_time:
+    print("Output: Real-Time Achieved")
+     
