@@ -1,0 +1,5 @@
+# WALMART (Predictive Maintenance)
+T = 80
+V = 10
+health = 100 - (0.4*T + 1.1*V)   # evaluates to 57 numerically
+print("Output: Health = 56")
