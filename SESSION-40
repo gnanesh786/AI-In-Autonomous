@@ -1,0 +1,8 @@
+#  TESLA (PID Control - Proportional Term Only)
+
+Kp    = 0.12   # proportional gain
+error = 12.0   # tracking error
+
+u = Kp * error
+
+print(f"Control Output = {u:.2f}")
