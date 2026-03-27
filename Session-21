@@ -1,0 +1,9 @@
+# NVIDIA (Reinforcement Learning) Parameters
+old_q      = 0      # implicit initial Q-value
+reward     = 8
+alpha      = 0.5    # learning rate
+
+# Q-learning update (simplified, no discount or next state)
+new_q = old_q + alpha * (reward - old_q)
+
+print(f"Q-value = {new_q:.0f}")
