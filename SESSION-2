@@ -1,0 +1,15 @@
+# Obstacle detection & halt controller (perception → planning → control)
+distance = 0.35  # m (from RealSense depth sensor)
+threshold = 0.5  # m
+
+# Reactive control: if obstacle is too close, stop
+if distance < threshold:
+    velocity = 0.0
+    status = "Robot Halted Safely"
+else:
+    velocity = 0.5  # example safe forward speed
+    status = "Robot Moving"
+
+print("Input:  Obstacle Distance =", distance, "m")
+print("Set Velocity =", velocity, "m/s")
+print("Output:", status)
