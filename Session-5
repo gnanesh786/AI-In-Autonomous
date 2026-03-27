@@ -1,0 +1,16 @@
+# AI model selection rule based on label availability
+has_labels = True   # Input: Labeled Dataset Available
+
+if has_labels:
+    learning_type = "Supervised Learning"
+    # Decide task: classification vs regression (for Iris → classification)
+    target_type = "categorical"   # e.g., species labels
+
+    if target_type == "continuous":
+        model_family = "Regression Model"
+    else:
+        model_family = "Classification Model"
+
+    print("Input:  Labeled Dataset Available =", has_labels)
+    print("Decision Rule: Labeled data ⇒", learning_type)
+    print("Output: ", model_family)   # Classification Model
