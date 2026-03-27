@@ -1,0 +1,10 @@
+#GOOGLE (Place Recognition) 
+similarity = 0.94
+threshold = 0.9
+
+if similarity > threshold:
+    recognized = True
+else:
+    recognized = False
+
+print("Place Recognized" if recognized else "Not Recognized")
