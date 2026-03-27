@@ -1,0 +1,26 @@
+# AMAZON (Patrolling)
+
+waypoints = [
+    (1.0, 1.0),
+    (2.0, 1.0),
+    (2.0, 2.0),
+    (1.0, 2.0),
+    (0.0, 1.5),
+]  # 5 waypoints
+
+current_index = 0
+
+def go_to_waypoint(wp):
+    # Send navigation command to robot here
+    print(f"Navigating to waypoint: {wp}")
+
+# Continuous patrol loop (press Ctrl+C to stop in a real script)
+while True:
+    target_wp = waypoints[current_index]
+    go_to_waypoint(target_wp)
+
+    # Here you would wait until the robot reaches the waypoint
+    # (navigation success callback / pose check)
+
+    # Move to next waypoint (cyclic)
+    current_index = (current_index + 1) % len(waypoints)
